@@ -130,8 +130,12 @@ public partial class MainView: Fuse.App
         var temp16 = new global::Fuse.Controls.ClientPanel();
         var temp17 = new global::Fuse.Controls.PageControl();
         var temp18 = new global::homePage();
+        var temp19 = new global::heightControlPage();
+        var temp20 = new global::lightControlPage();
         temp16.Children.Add(temp17);
         temp17.Children.Add(temp18);
+        temp17.Children.Add(temp19);
+        temp17.Children.Add(temp20);
         this.Children.Add(temp16);
     }
 }

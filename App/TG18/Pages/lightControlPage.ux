@@ -1,0 +1,21 @@
+<Page ux:Class="lightControlPage" ux:Name="lightControlPage">
+	<JavaScript File="lightControlPage.js" />
+	
+	<Panel>
+		<LinearGradient AngleDegrees="100">
+			<GradientStop Offset=".4" Color="#9CC52B" />
+			<GradientStop Offset="1" Color="#225231" />
+		</LinearGradient>
+		<Grid RowCount="6" ColumnCount="4">
+			<Each Items="{buttons}">
+				<Circle Height="80">
+					<tBuilt Value="{text}" Alignment="Center" FontSize="26" Color="{textColor}" />
+					<LinearGradient AngleDegrees="120">
+						<GradientStop Offset=".4" Color="{color}" />
+						<GradientStop Offset="1" Color="#222" />
+					</LinearGradient>
+				</Circle>
+			</Each>
+		</Grid>
+	</Panel>
+</Page>

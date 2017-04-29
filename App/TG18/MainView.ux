@@ -6,6 +6,8 @@
 	<ClientPanel>
 		<PageControl>
 			<homePage />
+			<heightControlPage />
+			<lightControlPage />
 		</PageControl>
 	</ClientPanel>
 </App>
