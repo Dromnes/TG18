@@ -1,0 +1,13 @@
+<Page ux:Class="homePage" ux:Name="homePage">
+	<JavaScript File="homePage.js" />
+
+	<StackPanel>
+		<Each Items="{pages}">
+			<customButton BoxSizing="FillAspect" Aspect="3" Text="{name}" TextColor="0, 0, 0, 255" Width="75%" FontSize="48">
+				<Clicked>
+					<NavigateTo Target="{navName}" />
+				</Clicked>
+			</customButton>
+		</Each>
+	</StackPanel>
+</Page>

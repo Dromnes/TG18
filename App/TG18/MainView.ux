@@ -1,3 +1,12 @@
-<App Theme="Basic">
+<App>
+	<Font File="Assets/Fonts/Built.ttf" ux:Global="built" />
+
+	<Text ux:Class="tBuilt" Font="built" />
+
+	<ClientPanel>
+		<PageControl>
+			<homePage />
+		</PageControl>
+	</ClientPanel>
 </App>
 

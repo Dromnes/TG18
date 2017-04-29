@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\TG18\\TG18_code\\App\\TG18\\build\\Android\\Preview\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "D:\\TG18\\TG18_code\\App\\TG18\\build\\Android\\Preview\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "D:\\TG18\\TG18_code\\App\\TG18\\build\\Android\\Preview\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "D:\\TG18\\TG18_code\\App\\TG18\\build\\Android\\Preview\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.4.0\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+    }
+]

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_1cd955e200cc319ce5fc897d9f24bda8d4fc357f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\src\main\libs\nv-websocket-client.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2e2859df4b1c217c768c1b4a23f54ef66af50140">
+        <dex dex="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\pre-dexed\debug\nv-websocket-client_e93ad84d95c92266f302c41a0def26f99aaaf970.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_27dfd3e6f69bec2629da5c4bc545ee1f39f092c7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_782741c170f17c2f019bb78d99629bd08ac9e166.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_e38f51041cbd8549a3a30450f537f9e3ccbd9c74.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_8f356b5b356ccbf1c7c011612747b0755b810dcb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\marti\AppData\Local\Fusetools\Fuse\Android\AndroidSDK\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_3ddbc8a9d36ebddb9d28fbb71a9dc3e88a2418cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_c2dd76496ca5fcd3d4e8ce14b2c675a0a493404f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="D:\TG18\TG18_code\App\TG18\build\Android\Preview\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_6723a4fc0d2d985f38ebd9c709b540b3badc5962.jar" />
+    </item>
+
+</items>

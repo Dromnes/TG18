@@ -1,0 +1,4 @@
+#Sat Apr 29 11:10:16 CEST 2017
+base.0=D\:\\TG18\\TG18_code\\App\\TG18\\build\\Android\\Preview\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=D\:\\TG18\\TG18_code\\App\\TG18\\build\\Android\\Preview\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
