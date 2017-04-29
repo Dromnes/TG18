@@ -1,7 +1,10 @@
 <Page ux:Class="homePage" ux:Name="homePage">
 	<JavaScript File="homePage.js" />
-
 	<StackPanel>
+		<LinearGradient AngleDegrees="105">
+			<GradientStop Offset=".4" Color="{colorPalette.bckgLightGreen}" />
+			<GradientStop Offset="1" Color="{colorPalette.bckgDarkGreen}" />
+		</LinearGradient>
 		<Each Items="{pages}">
 			<customButton BoxSizing="FillAspect" Aspect="3" Text="{name}" TextColor="0, 0, 0, 255" Width="75%" FontSize="48">
 				<Clicked>

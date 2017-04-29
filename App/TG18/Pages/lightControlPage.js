@@ -234,5 +234,7 @@ module.exports = {
 	text: text,
 	textColor: textColor,
 	color: color,
-	signal: signal
+	signal: signal,
+
+	colorPalette: colorPalette
 };

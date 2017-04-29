@@ -88,6 +88,36 @@ var colors = [
 		id: "17",
 		name: "grey",
 		code: "#999999"
+	},
+	{
+		id: "18",
+		name: "mdLightGreen",
+		code: "#9CC52B"
+	},
+	{
+		id: "19",
+		name: "mdGreen",
+		code: "#53AD3D"
+	},
+	{
+		id: "20",
+		name: "mdDarkGreen",
+		code: "#225231"
+	},
+	{
+		id: "21",
+		name: "mdWhite",
+		code: "#EEF0F2"
+	},
+	{
+		id: "22",
+		name: "mdBlack",
+		code: "#171417"
+	},
+	{
+		id: "23",
+		name: "mdRed",
+		code: "#E1422D"
 	}
 ];
 
@@ -99,11 +129,16 @@ function getColor(name) {
 	}
 }
 
+var bckgDarkGreen = getColor("mdDarkGreen");
+var bckgLightGreen = getColor("mdLightGreen");
 
 module.exports = {
 	colors: colors,
 
 	name: colors.name,
 	code: colors.code,
-	getColor: getColor
+	getColor: getColor,
+
+	bckgDarkGreen: bckgDarkGreen,
+	bckgLightGreen: bckgLightGreen
 }

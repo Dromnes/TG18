@@ -1,15 +1,22 @@
 <Page ux:Class="heightControlPage" ux:Name="heightControlPage">
-	<StackPanel Dock="Top">
-		<Panel Color="#595FFF" Height="45">
-			<Text Value="Hev og senk" FontSize="22"
-				  Alignment="Center" TextColor="#fff"/>
-		</Panel>
-	</StackPanel>
-	<StackPanel Alignment="VerticalCenter">
-		<customButton BoxSizing="FillAspect" Aspect="1" Text="Opp" TextColor="0, 0, 0, 255" Width="50%" FontSize="72">
-		</customButton>
+	<JavaScript File="heightControlPage.js" />
+	<Panel>
+		<LinearGradient AngleDegrees="105">
+			<GradientStop Offset=".4" Color="{colorPalette.bckgLightGreen}" />
+			<GradientStop Offset="1" Color="{colorPalette.bckgDarkGreen}" />
+		</LinearGradient>
+		<StackPanel Dock="Top">
+			<Panel Color="#595FFF" Height="45">
+				<Text Value="Hev og senk" FontSize="22"
+					  Alignment="Center" TextColor="#fff"/>
+			</Panel>
+		</StackPanel>
+		<StackPanel Alignment="VerticalCenter">
+			<customButton BoxSizing="FillAspect" Aspect="1" Text="Opp" TextColor="0, 0, 0, 255" Width="50%" FontSize="72">
+			</customButton>
 
-		<customButton BoxSizing="FillAspect" Aspect="1" Text="Ned" TextColor="0, 0, 0, 255" Width="50%" FontSize="72">
-		</customButton>
-	</StackPanel>
+			<customButton BoxSizing="FillAspect" Aspect="1" Text="Ned" TextColor="0, 0, 0, 255" Width="50%" FontSize="72">
+			</customButton>
+		</StackPanel>
+	</Panel>
 </Page>
