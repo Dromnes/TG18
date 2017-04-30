@@ -1,20 +1,14 @@
 <Page ux:Class="homePage" ux:Name="homePage">
 	<JavaScript File="homePage.js" />
 	<StackPanel>
-		<LinearGradient AngleDegrees="105">
-			<GradientStop Offset=".4" Color="{colorPalette.bckgLightGreen}" />
-			<GradientStop Offset="1" Color="{colorPalette.bckgDarkGreen}" />
-		</LinearGradient>
-
-
 		<StackPanel Dock="Top">
 			<Panel Color="{colorPalette.mdRed}" Height="45">
-				<Text Value="Hjem" FontSize="22" Alignment="Center" TextColor="#fff"/>
+				<Text Value="Hjem" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite}"/>
 			</Panel>
 		</StackPanel>
 		
 		<Each Items="{pages}" Offset="1">
-			<customButton BoxSizing="FillAspect" Aspect="3" Text="{name}" TextColor="0, 0, 0, 255" Width="75%" FontSize="48">
+			<customButton BoxSizing="FillAspect" Aspect="3" Text="{name}" TextColor="{colorPalette.mdBlack}" Width="75%" FontSize="28">
 				<Clicked>
 					<NavigateTo Target="{navName}" />
 				</Clicked>

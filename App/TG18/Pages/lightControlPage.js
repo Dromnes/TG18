@@ -1,6 +1,5 @@
-var colorPalette = require("../Assets/colorPalette");
-
 var lightControlButtons = [];
+var colorPalette = require("../Assets/colorPalette");
 
 function createButton(name, text, textColor, color, signal) {
 	lightControlButtons.push({
@@ -44,7 +43,5 @@ createButton("pink", -1, -1, colorPalette.getColor("pink"), "");
 createButton("smooth", "SMOOTH", colorPalette.getColor("black"), colorPalette.getColor("grey"), "");
 
 module.exports = {
-	colorPalette: colorPalette,
-
 	lightControlButtons: lightControlButtons,
 };

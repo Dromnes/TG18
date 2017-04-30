@@ -1,19 +1,14 @@
 <Page ux:Class="pcControlPage" ux:Name="pcControlPage">
 	<JavaScript File="pcControlPage.js" />
 	<Panel>
-		<LinearGradient AngleDegrees="75">
-			<GradientStop Offset=".4" Color="{colorPalette.bckgLightGreen}" />
-			<GradientStop Offset="1" Color="{colorPalette.bckgDarkGreen}" />
-		</LinearGradient>
-
 		<StackPanel Dock="Top">
 			<Panel Color="{colorPalette.mdRed}" Height="45">
-				<Text Value="PC-behandling" FontSize="22" Alignment="Center" TextColor="#fff"/>
+				<Text Value="PC-behandling" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite}"/>
 			</Panel>
 		</StackPanel>
 		<StackPanel Alignment="VerticalCenter">
 			<Each Items="{pcControlButtons}">
-				<customButton BoxSizing="FillAspect" Aspect="1" Text="{text}" TextColor="{textColor}" Width="50%" FontSize="48">
+				<customButton BoxSizing="FillAspect" Aspect="1" Text="{text}" TextColor="{textColor}" Width="50%" FontSize="36">
 				</customButton>
 			</Each>
 		</StackPanel>
