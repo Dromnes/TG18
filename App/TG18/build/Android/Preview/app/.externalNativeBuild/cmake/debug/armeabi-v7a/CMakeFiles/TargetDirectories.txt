@@ -1,3 +1,0 @@
-D:/TG18/TG18_code/App/TG18/build/Android/Preview/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-D:/TG18/TG18_code/App/TG18/build/Android/Preview/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/TG18.dir
-D:/TG18/TG18_code/App/TG18/build/Android/Preview/app/.externalNativeBuild/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir

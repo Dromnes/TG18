@@ -1,7 +1,0 @@
-C:/Users/marti/AppData/Local/Fusetools/Fuse/Android/AndroidSDK/ndk-bundle
-9
-armeabi-v7a
--O3 -g -DNDEBUG
-
- -IC:/Users/marti/AppData/Local/Fusetools/Packages/UnoCore/0.47.13/prebuilt/Android/include -IC:/Users/marti/AppData/Local/Fusetools/Fuse/Android/AndroidSDK/ndk-bundle/sources/android/support/include -IC:/Users/marti/AppData/Local/Fusetools/Packages/Fuse.Scripting.V8/0.47.7 -IC:/Users/marti/AppData/Local/Fusetools/Packages/Fuse.Text/0.47.7/harfbuzz/include
-C:/Users/marti/AppData/Local/Fusetools/Fuse/Android/AndroidSDK/ndk-bundle/sources/cxx-stl/stlport/stlport
