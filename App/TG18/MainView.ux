@@ -2,11 +2,11 @@
 	<Font File="Assets/Fonts/Built.ttf" ux:Global="built" />
 	<Text ux:Class="tBuilt" Font="built" />
 	<JavaScript>
-	var colorPalette = require("Assets/colorPalette");
+		var colorPalette = require("Assets/colorPalette");
 
-	module.exports = {
-		colorPalette: colorPalette.colors
-	}
+		module.exports = {
+			colorPalette: colorPalette.colors
+		}
 	</JavaScript>
 
 	<ClientPanel>

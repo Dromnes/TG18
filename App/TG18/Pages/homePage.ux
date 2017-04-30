@@ -7,10 +7,10 @@
 			</Panel>
 		</StackPanel>
 		
-		<Each Items="{pages}" Offset="1">
+		<Each Items="{pagesArray}" Offset="1">
 			<customButton BoxSizing="FillAspect" Aspect="3" Text="{name}" TextColor="{colorPalette.mdBlack.code}" Width="75%" FontSize="28">
 				<Clicked>
-					<NavigateTo Target="{navName}" />
+					<NavigateTo Target="{navReference}" />
 				</Clicked>
 			</customButton>
 		</Each>

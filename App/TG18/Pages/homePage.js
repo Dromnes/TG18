@@ -1,8 +1,13 @@
 var pages = require("Pages/pages");
+var pagesArray = [];
+
+for(var key in pages) {
+	pagesArray.push(pages[key]);
+}
 
 module.exports = {
-	pages: pages,
+	pagesArray: pagesArray,
 
-	name: pages.name,
-	navName: pages.navName
+	name: pagesArray.name,
+	navReference: pagesArray.navReference
 }
