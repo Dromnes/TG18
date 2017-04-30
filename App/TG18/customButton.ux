@@ -4,8 +4,8 @@
 	<int ux:Property="FontSize" />
 	<tBuilt Value="{ReadProperty customButton.Text}" Color="{ReadProperty customButton.TextColor}" FontSize="{ReadProperty customButton.FontSize}" Alignment="Center" Margin="30,15" />
 	<LinearGradient AngleDegrees="120">
-		<GradientStop Offset=".4" Color="{colorPalette.grey}" />
-		<GradientStop Offset="1" Color="{colorPalette.mdBlack}" />
+		<GradientStop Offset=".4" Color="{colorPalette.grey.code}" />
+		<GradientStop Offset="1" Color="{colorPalette.mdBlack.code}" />
 	</LinearGradient>
 
 	<WhilePressed>

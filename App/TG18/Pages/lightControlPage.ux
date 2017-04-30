@@ -2,8 +2,8 @@
 	<JavaScript File="lightControlPage.js" />
 	<StackPanel>
 		<StackPanel Dock="Top">
-			<Panel Color="{colorPalette.mdRed}" Height="45">
-				<Text Value="Lysstyring" FontSize="22" Alignment="Center" TextColor="#fff"/>
+			<Panel Color="{colorPalette.mdRed.code}" Height="45">
+				<Text Value="Lysstyring" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite.code}"/>
 			</Panel>
 		</StackPanel>
 		<Grid RowCount="6" ColumnCount="4">
@@ -11,7 +11,7 @@
 				<customButtonCircle Height="60" Margin="0, 20, 0, 10" Text="{text}" TextColor="{textColor}" FontSize="20">
 					<LinearGradient AngleDegrees="120">
 						<GradientStop Offset=".4" Color="{color}" />
-						<GradientStop Offset="1" Color="{colorPalette.mdBlack}" />
+						<GradientStop Offset="1" Color="{colorPalette.mdBlack.code}" />
 					</LinearGradient>
 				</customButtonCircle>
 			</Each>

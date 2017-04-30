@@ -1,4 +1,5 @@
 var colorPalette = require("../Assets/colorPalette");
+colorPalette = colorPalette.colors;
 
 var pcControlButtons = [];
 
@@ -13,11 +14,9 @@ function createButtons(name, text, textColor, color, signal) {
 	});
 }
 
-createButtons("restart", "Restart", colorPalette.getColor("black"), colorPalette.getColor("grey"), "");
-createButtons("on/off", "ON/OFF", colorPalette.getColor("black"), colorPalette.getColor("grey"), "");
+createButtons("restart", "Restart", colorPalette.black.code, colorPalette.grey.code, "");
+createButtons("on/off", "ON/OFF", colorPalette.black.code, colorPalette.grey.code, "");
 
 module.exports = {
-	colorPalette: colorPalette,
-
 	pcControlButtons: pcControlButtons
 }

@@ -2,8 +2,8 @@
 	<JavaScript File="pcControlPage.js" />
 	<Panel>
 		<StackPanel Dock="Top">
-			<Panel Color="{colorPalette.mdRed}" Height="45">
-				<Text Value="PC-behandling" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite}"/>
+			<Panel Color="{colorPalette.mdRed.code}" Height="45">
+				<Text Value="PC-behandling" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite.code}"/>
 			</Panel>
 		</StackPanel>
 		<StackPanel Alignment="VerticalCenter">

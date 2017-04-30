@@ -1,19 +1,18 @@
 <App>
 	<Font File="Assets/Fonts/Built.ttf" ux:Global="built" />
 	<Text ux:Class="tBuilt" Font="built" />
-
 	<JavaScript>
-		var colorPalette = require("Assets/colorPalette");
+	var colorPalette = require("Assets/colorPalette");
 
-		module.exports = {
-			colorPalette: colorPalette
-		}
+	module.exports = {
+		colorPalette: colorPalette.colors
+	}
 	</JavaScript>
 
 	<ClientPanel>
 		<LinearGradient AngleDegrees="75">
-			<GradientStop Offset=".4" Color="{colorPalette.bckgLightGreen}" />
-			<GradientStop Offset="1" Color="{colorPalette.bckgDarkGreen}" />
+			<GradientStop Offset=".4" Color="{colorPalette.mdLightGreen.code}" />
+			<GradientStop Offset="1" Color="{colorPalette.mdDarkGreen.code}" />
 		</LinearGradient>
 		<PageControl ux:Name="nav">
 			<homePage />
@@ -23,12 +22,11 @@
 		</PageControl>
 
 		<PageIndicator Dock="Bottom" Navigation="nav" Alignment="Center">
-			<Circle ux:Template="Dot" Height="10" Width="10" Margin="10" Color="#555">
+			<Circle ux:Template="Dot" Height="10" Width="10" Margin="10" Color="{colorPalette.mdWhite.code}">
 				<ActivatingAnimation>
-					<Scale Factor="1.3" />
+					<Scale Factor="1.5" />
 				</ActivatingAnimation>
 			</Circle>
 		</PageIndicator>
 	</ClientPanel>
 </App>
-

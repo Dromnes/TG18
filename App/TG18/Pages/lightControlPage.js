@@ -1,5 +1,5 @@
-var lightControlButtons = [];
 var colorPalette = require("../Assets/colorPalette");
+colorPalette = colorPalette.colors;
 
 function createButton(name, text, textColor, color, signal) {
 	lightControlButtons.push({
@@ -12,36 +12,38 @@ function createButton(name, text, textColor, color, signal) {
 	});
 }
 
-createButton("dimUp", -1, -1, colorPalette.getColor("white"), "");
-createButton("dimDown", -1, -1, colorPalette.getColor("white"), "");
-createButton("off", "OFF", colorPalette.getColor("white"), colorPalette.getColor("black"), "");
-createButton("on", "ON", colorPalette.getColor("white"), colorPalette.getColor("red"), "");
+var lightControlButtons = [];
 
-createButton("red", "R", colorPalette.getColor("black"), colorPalette.getColor("red"), "");
-createButton("green", "G", colorPalette.getColor("black"), colorPalette.getColor("green"), "");
-createButton("blue", "B", colorPalette.getColor("white"), colorPalette.getColor("blue"), "");
-createButton("white", "W", colorPalette.getColor("black"), colorPalette.getColor("white"), "");
+createButton("dimUp", -1, -1, colorPalette.white.code, "");
+createButton("dimDown", -1, -1, colorPalette.white.code, "");
+createButton("off", "OFF", colorPalette.white.code, colorPalette.black.code, "");
+createButton("on", "ON", colorPalette.white.code, colorPalette.red.code, "");
 
-createButton("lightRed", -1, -1, colorPalette.getColor("lightRed"), "");
-createButton("lightGreen", -1, -1, colorPalette.getColor("lightGreen"), "");
-createButton("lightBlue", -1, -1, colorPalette.getColor("lightBlue"), "");
-createButton("flash", "FLASH", colorPalette.getColor("black"), colorPalette.getColor("grey"), "");
+createButton("red", "R", colorPalette.black.code, colorPalette.red.code, "");
+createButton("green", "G", colorPalette.black.code, colorPalette.green.code, "");
+createButton("blue", "B", colorPalette.white.code, colorPalette.blue.code, "");
+createButton("white", "W", colorPalette.black.code, colorPalette.white.code, "");
 
-createButton("orange", -1, -1, colorPalette.getColor("orange"), "");
-createButton("cyan", -1, -1, colorPalette.getColor("cyan"), "");
-createButton("violet", -1, -1, colorPalette.getColor("violet"), "");
-createButton("strobe", "STROBE", colorPalette.getColor("black"), colorPalette.getColor("grey"), "");
+createButton("lightRed", -1, -1, colorPalette.lightRed.code, "");
+createButton("lightGreen", -1, -1, colorPalette.lightGreen.code, "");
+createButton("lightBlue", -1, -1, colorPalette.lightBlue.code, "");
+createButton("flash", "FLASH", colorPalette.black.code, colorPalette.grey.code, "");
 
-createButton("lightOrange", -1, -1, colorPalette.getColor("lightOrange"), "");
-createButton("lightTurquoise", -1, -1, colorPalette.getColor("lightTurquoise"), "");
-createButton("purple", -1, -1, colorPalette.getColor("purple"), "");
-createButton("fade", "FADE", colorPalette.getColor("black"), colorPalette.getColor("grey"), "");
+createButton("orange", -1, -1, colorPalette.orange.code, "");
+createButton("cyan", -1, -1, colorPalette.cyan.code, "");
+createButton("violet", -1, -1, colorPalette.violet.code, "");
+createButton("strobe", "STROBE", colorPalette.black.code, colorPalette.grey.code, "");
 
-createButton("yellow", -1, -1, colorPalette.getColor("yellow"), "");
-createButton("turquoise", -1, -1, colorPalette.getColor("turquoise"), "");
-createButton("pink", -1, -1, colorPalette.getColor("pink"), "");
-createButton("smooth", "SMOOTH", colorPalette.getColor("black"), colorPalette.getColor("grey"), "");
+createButton("lightOrange", -1, -1, colorPalette.lightOrange.code, "");
+createButton("lightTurquoise", -1, -1, colorPalette.lightTurquoise.code, "");
+createButton("purple", -1, -1, colorPalette.purple.code, "");
+createButton("fade", "FADE", colorPalette.black.code, colorPalette.grey.code, "");
+
+createButton("yellow", -1, -1, colorPalette.yellow.code, "");
+createButton("turquoise", -1, -1, colorPalette.turquoise.code, "");
+createButton("pink", -1, -1, colorPalette.pink.code, "");
+createButton("smooth", "SMOOTH", colorPalette.black.code, colorPalette.grey.code, "");
 
 module.exports = {
-	lightControlButtons: lightControlButtons,
+	lightControlButtons: lightControlButtons
 };
