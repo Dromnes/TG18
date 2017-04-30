@@ -1,13 +1,13 @@
 <Page ux:Class="heightControlPage" ux:Name="heightControlPage">
 	<JavaScript File="heightControlPage.js" />
 	<Panel>
-		<LinearGradient AngleDegrees="90">
+		<LinearGradient AngleDegrees="75">
 			<GradientStop Offset=".4" Color="{colorPalette.bckgLightGreen}" />
 			<GradientStop Offset="1" Color="{colorPalette.bckgDarkGreen}" />
 		</LinearGradient>
 
 		<StackPanel Dock="Top">
-			<Panel Color="#595FFF" Height="45">
+			<Panel Color="{colorPalette.mdRed}" Height="45">
 				<Text Value="Hev og senk" FontSize="22" Alignment="Center" TextColor="#fff"/>
 			</Panel>
 		</StackPanel>

@@ -1,0 +1,10 @@
+<Circle ux:Class="customButtonCircle" ux:Name="customButtonCircle">
+	<string ux:Property="Text" />
+	<float4 ux:Property="TextColor" />
+	<int ux:Property="FontSize" />
+
+	<tBuilt Value="{ReadProperty customButtonCircle.Text}" Alignment="Center" FontSize="{ReadProperty customButtonCircle.FontSize}" Color="{ReadProperty customButtonCircle.TextColor}" />
+	<WhilePressed>
+		<Scale Factor="1.2" Duration=".1" />
+	</WhilePressed>
+</Circle>

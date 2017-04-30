@@ -131,6 +131,10 @@ function getColor(name) {
 
 var bckgDarkGreen = getColor("mdDarkGreen");
 var bckgLightGreen = getColor("mdLightGreen");
+var mdWhite = getColor("mdWhite");
+var mdBlack = getColor("mdBlack");
+var mdRed = getColor("mdRed");
+var grey = getColor("grey");
 
 module.exports = {
 	colors: colors,
@@ -140,5 +144,9 @@ module.exports = {
 	getColor: getColor,
 
 	bckgDarkGreen: bckgDarkGreen,
-	bckgLightGreen: bckgLightGreen
+	bckgLightGreen: bckgLightGreen,
+	mdWhite: mdWhite,
+	mdBlack: mdBlack,
+	mdRed: mdRed,
+	grey: grey
 }

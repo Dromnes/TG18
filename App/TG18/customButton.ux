@@ -1,10 +1,15 @@
-<Panel ux:Class="customButton" ux:Name="customButton" HitTestMode="LocalBounds" Margin="4" Color="#25a">
+<Panel ux:Class="customButton" ux:Name="customButton" HitTestMode="LocalBounds" Margin="4">
 	<float4 ux:Property="TextColor" />
 	<string ux:Property="Text" />
 	<int ux:Property="FontSize" />
 	<tBuilt Value="{ReadProperty customButton.Text}" Color="{ReadProperty customButton.TextColor}" FontSize="{ReadProperty customButton.FontSize}" Alignment="Center" Margin="30,15" />
+	<LinearGradient AngleDegrees="120">
+		<GradientStop Offset=".4" Color="{colorPalette.grey}" />
+		<GradientStop Offset="1" Color="{colorPalette.mdBlack}" />
+	</LinearGradient>
 
 	<WhilePressed>
-		<Change customButton.Color="#138" Duration=".05" DurationBack=".2" />
+        <Scale Factor="1.05" Duration=".1" DurationBack=".2" />
 	</WhilePressed>
+
 </Panel>
