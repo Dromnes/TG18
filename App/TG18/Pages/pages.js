@@ -13,6 +13,11 @@ var pages = [
 		id: 2,
 		name: "Light control",
 		navName: "lightControlPage"
+	},
+	{
+		id: 3,
+		name: "Pc control",
+		navName: "pcControlPage"
 	}
 ];
 

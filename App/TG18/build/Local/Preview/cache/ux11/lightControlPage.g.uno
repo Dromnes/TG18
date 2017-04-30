@@ -57,6 +57,8 @@ public partial class lightControlPage: Fuse.Controls.Page
         static global::Uno.UX.Selector __selector1 = "Color";
     }
     global::Uno.UX.Property<object> temp_Items_inst;
+    global::Uno.UX.Property<float4> temp1_Color_inst;
+    global::Uno.UX.Property<float4> temp2_Color_inst;
     global::Uno.UX.NameTable __g_nametable;
     static string[] __g_static_nametable = new string[] {
     };
@@ -71,39 +73,48 @@ public partial class lightControlPage: Fuse.Controls.Page
     void InitializeUX()
     {
         __g_nametable = new global::Uno.UX.NameTable(null, __g_static_nametable);
+        var temp3 = new global::Fuse.Reactive.Data("colorPalette");
+        var temp4 = new global::Fuse.Reactive.Data("colorPalette");
         var temp = new global::Fuse.Reactive.Each();
         temp_Items_inst = new TG18_FuseReactiveEach_Items_Property(temp, __selector0);
-        var temp1 = new global::Fuse.Reactive.Data("buttons");
-        var temp2 = new global::Fuse.Reactive.JavaScript(__g_nametable);
-        var temp3 = new global::Fuse.Controls.Panel();
-        var temp4 = new global::Fuse.Drawing.LinearGradient();
-        var temp5 = new global::Fuse.Drawing.GradientStop();
-        var temp6 = new global::Fuse.Drawing.GradientStop();
-        var temp7 = new global::Fuse.Controls.Grid();
-        var temp8 = new Template(this, this);
-        var temp9 = new global::Fuse.Reactive.DataBinding(temp_Items_inst, temp1, __g_nametable, Fuse.Reactive.BindingMode.Default);
-        this.Name = __selector1;
-        temp2.LineNumber = 2;
-        temp2.FileName = "Pages/lightControlPage.ux";
-        temp2.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../../../Pages/lightControlPage.js"));
-        temp3.Background = temp4;
-        temp3.Children.Add(temp7);
-        temp4.AngleDegrees = 100f;
-        temp4.Stops.Add(temp5);
-        temp4.Stops.Add(temp6);
-        temp5.Offset = 0.4f;
-        temp5.Color = float4(0.6117647f, 0.772549f, 0.1686275f, 1f);
-        temp6.Offset = 1f;
-        temp6.Color = float4(0.1333333f, 0.3215686f, 0.1921569f, 1f);
-        temp7.RowCount = 6;
-        temp7.ColumnCount = 4;
-        temp7.Children.Add(temp);
-        temp.Templates.Add(temp8);
-        temp.Bindings.Add(temp9);
+        var temp5 = new global::Fuse.Reactive.Data("lightControlButtons");
+        var temp1 = new global::Fuse.Drawing.GradientStop();
+        temp1_Color_inst = new TG18_FuseDrawingGradientStop_Color_Property(temp1, __selector1);
+        var temp6 = new global::Fuse.Reactive.Member(temp3, "bckgLightGreen");
+        var temp2 = new global::Fuse.Drawing.GradientStop();
+        temp2_Color_inst = new TG18_FuseDrawingGradientStop_Color_Property(temp2, __selector1);
+        var temp7 = new global::Fuse.Reactive.Member(temp4, "bckgDarkGreen");
+        var temp8 = new global::Fuse.Reactive.JavaScript(__g_nametable);
+        var temp9 = new global::Fuse.Controls.Panel();
+        var temp10 = new global::Fuse.Drawing.LinearGradient();
+        var temp11 = new global::Fuse.Controls.Grid();
+        var temp12 = new Template(this, this);
+        var temp13 = new global::Fuse.Reactive.DataBinding(temp_Items_inst, temp5, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        var temp14 = new global::Fuse.Reactive.DataBinding(temp1_Color_inst, temp6, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        var temp15 = new global::Fuse.Reactive.DataBinding(temp2_Color_inst, temp7, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        this.Name = __selector2;
+        temp8.LineNumber = 2;
+        temp8.FileName = "Pages/lightControlPage.ux";
+        temp8.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../../../Pages/lightControlPage.js"));
+        temp9.Background = temp10;
+        temp9.Children.Add(temp11);
+        temp9.Bindings.Add(temp14);
+        temp9.Bindings.Add(temp15);
+        temp10.AngleDegrees = 90f;
+        temp10.Stops.Add(temp1);
+        temp10.Stops.Add(temp2);
+        temp1.Offset = 0.4f;
+        temp2.Offset = 1f;
+        temp11.RowCount = 6;
+        temp11.ColumnCount = 4;
+        temp11.Children.Add(temp);
+        temp.Templates.Add(temp12);
+        temp.Bindings.Add(temp13);
         __g_nametable.This = this;
-        this.Children.Add(temp2);
-        this.Children.Add(temp3);
+        this.Children.Add(temp8);
+        this.Children.Add(temp9);
     }
     static global::Uno.UX.Selector __selector0 = "Items";
-    static global::Uno.UX.Selector __selector1 = "lightControlPage";
+    static global::Uno.UX.Selector __selector1 = "Color";
+    static global::Uno.UX.Selector __selector2 = "lightControlPage";
 }

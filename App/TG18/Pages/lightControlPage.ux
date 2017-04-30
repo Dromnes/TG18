@@ -1,12 +1,13 @@
 <Page ux:Class="lightControlPage" ux:Name="lightControlPage">
 	<JavaScript File="lightControlPage.js" />
 	<Panel>
-		<LinearGradient AngleDegrees="105">
+		<LinearGradient AngleDegrees="90">
 			<GradientStop Offset=".4" Color="{colorPalette.bckgLightGreen}" />
 			<GradientStop Offset="1" Color="{colorPalette.bckgDarkGreen}" />
 		</LinearGradient>
+		
 		<Grid RowCount="6" ColumnCount="4">
-			<Each Items="{buttons}">
+			<Each Items="{lightControlButtons}">
 				<Circle Height="80">
 					<tBuilt Value="{text}" Alignment="Center" FontSize="26" Color="{textColor}" />
 					<LinearGradient AngleDegrees="120">

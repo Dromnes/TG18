@@ -46,6 +46,8 @@ public partial class homePage: Fuse.Controls.Page
         static global::Uno.UX.Selector __selector1 = "Text";
     }
     global::Uno.UX.Property<object> temp_Items_inst;
+    global::Uno.UX.Property<float4> temp1_Color_inst;
+    global::Uno.UX.Property<float4> temp2_Color_inst;
     global::Uno.UX.NameTable __g_nametable;
     static string[] __g_static_nametable = new string[] {
     };
@@ -60,24 +62,44 @@ public partial class homePage: Fuse.Controls.Page
     void InitializeUX()
     {
         __g_nametable = new global::Uno.UX.NameTable(null, __g_static_nametable);
+        var temp3 = new global::Fuse.Reactive.Data("colorPalette");
+        var temp4 = new global::Fuse.Reactive.Data("colorPalette");
         var temp = new global::Fuse.Reactive.Each();
         temp_Items_inst = new TG18_FuseReactiveEach_Items_Property(temp, __selector0);
-        var temp1 = new global::Fuse.Reactive.Data("pages");
-        var temp2 = new global::Fuse.Reactive.JavaScript(__g_nametable);
-        var temp3 = new global::Fuse.Controls.StackPanel();
-        var temp4 = new Template(this, this);
-        var temp5 = new global::Fuse.Reactive.DataBinding(temp_Items_inst, temp1, __g_nametable, Fuse.Reactive.BindingMode.Default);
-        this.Name = __selector1;
-        temp2.LineNumber = 2;
-        temp2.FileName = "Pages/homePage.ux";
-        temp2.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../../../Pages/homePage.js"));
-        temp3.Children.Add(temp);
-        temp.Templates.Add(temp4);
-        temp.Bindings.Add(temp5);
+        var temp5 = new global::Fuse.Reactive.Data("pages");
+        var temp1 = new global::Fuse.Drawing.GradientStop();
+        temp1_Color_inst = new TG18_FuseDrawingGradientStop_Color_Property(temp1, __selector1);
+        var temp6 = new global::Fuse.Reactive.Member(temp3, "bckgLightGreen");
+        var temp2 = new global::Fuse.Drawing.GradientStop();
+        temp2_Color_inst = new TG18_FuseDrawingGradientStop_Color_Property(temp2, __selector1);
+        var temp7 = new global::Fuse.Reactive.Member(temp4, "bckgDarkGreen");
+        var temp8 = new global::Fuse.Reactive.JavaScript(__g_nametable);
+        var temp9 = new global::Fuse.Controls.StackPanel();
+        var temp10 = new global::Fuse.Drawing.LinearGradient();
+        var temp11 = new Template(this, this);
+        var temp12 = new global::Fuse.Reactive.DataBinding(temp_Items_inst, temp5, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        var temp13 = new global::Fuse.Reactive.DataBinding(temp1_Color_inst, temp6, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        var temp14 = new global::Fuse.Reactive.DataBinding(temp2_Color_inst, temp7, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        this.Name = __selector2;
+        temp8.LineNumber = 2;
+        temp8.FileName = "Pages/homePage.ux";
+        temp8.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../../../Pages/homePage.js"));
+        temp9.Background = temp10;
+        temp9.Children.Add(temp);
+        temp9.Bindings.Add(temp13);
+        temp9.Bindings.Add(temp14);
+        temp10.AngleDegrees = 90f;
+        temp10.Stops.Add(temp1);
+        temp10.Stops.Add(temp2);
+        temp1.Offset = 0.4f;
+        temp2.Offset = 1f;
+        temp.Templates.Add(temp11);
+        temp.Bindings.Add(temp12);
         __g_nametable.This = this;
-        this.Children.Add(temp2);
-        this.Children.Add(temp3);
+        this.Children.Add(temp8);
+        this.Children.Add(temp9);
     }
     static global::Uno.UX.Selector __selector0 = "Items";
-    static global::Uno.UX.Selector __selector1 = "homePage";
+    static global::Uno.UX.Selector __selector1 = "Color";
+    static global::Uno.UX.Selector __selector2 = "homePage";
 }

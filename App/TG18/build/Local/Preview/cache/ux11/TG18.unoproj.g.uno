@@ -63,6 +63,14 @@ sealed class TG18_FuseControlsPanel_Color_Property: Uno.UX.Property<float4>
     public override void Set(global::Uno.UX.PropertyObject obj, float4 v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Controls.Panel)obj).SetColor(v, origin); }
     public override bool SupportsOriginSetter { get { return true; } }
 }
+sealed class TG18_FuseDrawingGradientStop_Color_Property: Uno.UX.Property<float4>
+{
+    [Uno.WeakReference] readonly Fuse.Drawing.GradientStop _obj;
+    public TG18_FuseDrawingGradientStop_Color_Property(Fuse.Drawing.GradientStop obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
+    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
+    public override float4 Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Drawing.GradientStop)obj).Color; }
+    public override void Set(global::Uno.UX.PropertyObject obj, float4 v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Drawing.GradientStop)obj).Color = v; }
+}
 sealed class TG18_FuseReactiveEach_Items_Property: Uno.UX.Property<object>
 {
     [Uno.WeakReference] readonly Fuse.Reactive.Each _obj;
@@ -87,14 +95,6 @@ sealed class TG18_FuseNavigationNavigateTo_Target_Property: Uno.UX.Property<Fuse
     public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
     public override Fuse.Visual Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Navigation.NavigateTo)obj).Target; }
     public override void Set(global::Uno.UX.PropertyObject obj, Fuse.Visual v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Navigation.NavigateTo)obj).Target = v; }
-}
-sealed class TG18_FuseDrawingGradientStop_Color_Property: Uno.UX.Property<float4>
-{
-    [Uno.WeakReference] readonly Fuse.Drawing.GradientStop _obj;
-    public TG18_FuseDrawingGradientStop_Color_Property(Fuse.Drawing.GradientStop obj, global::Uno.UX.Selector name) : base(name) { _obj = obj; }
-    public override global::Uno.UX.PropertyObject Object { get { return _obj; } }
-    public override float4 Get(global::Uno.UX.PropertyObject obj) { return ((Fuse.Drawing.GradientStop)obj).Color; }
-    public override void Set(global::Uno.UX.PropertyObject obj, float4 v, global::Uno.UX.IPropertyListener origin) { ((Fuse.Drawing.GradientStop)obj).Color = v; }
 }
 sealed class TG18_customButton_TextColor_Property: Uno.UX.Property<float4>
 {

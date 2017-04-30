@@ -1,0 +1,21 @@
+<Page ux:Class="pcControlPage" ux:Name="pcControlPage">
+	<JavaScript File="pcControlPage.js" />
+	<Panel>
+		<LinearGradient AngleDegrees="90">
+			<GradientStop Offset=".4" Color="{colorPalette.bckgLightGreen}" />
+			<GradientStop Offset="1" Color="{colorPalette.bckgDarkGreen}" />
+		</LinearGradient>
+
+		<Grid RowCount="6" ColumnCount="4">
+			<Each Items="{pcControlButtons}">
+				<Circle Height="80">
+					<tBuilt Value="{text}" Alignment="Center" FontSize="26" Color="{textColor}" />
+					<LinearGradient AngleDegrees="120">
+						<GradientStop Offset=".4" Color="{color}" />
+						<GradientStop Offset="1" Color="#222" />
+					</LinearGradient>
+				</Circle>
+			</Each>
+		</Grid>
+	</Panel>
+</Page>
