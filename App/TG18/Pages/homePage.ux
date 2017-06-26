@@ -1,18 +1,22 @@
 <Page ux:Class="homePage" ux:Name="homePage">
 	<JavaScript File="homePage.js" />
+
+	<Activated>
+		<JavaScript>
+			var helperFunctions = require("../Assets/JavaScript/helperFunctions");
+			helperFunctions.changeActivePage("homePage");
+		</JavaScript>
+	</Activated>
+
 	<StackPanel>
-		<StackPanel Dock="Top">
-			<Panel Color="{colorPalette.mdRed.code}" Height="45">
-				<Text Value="Hjem" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite.code}"/>
-			</Panel>
-		</StackPanel>
-		
 		<Each Items="{pagesArray}" Offset="1">
-			<customButton BoxSizing="FillAspect" Aspect="3" Text="{name}" TextColor="{colorPalette.mdBlack.code}" Width="75%" FontSize="28">
+			<tg.Button BoxSizing="FillAspect" Aspect="3" Text="{name}" TextColor="{colorPalette.mdBlack.code}" Width="100%" FontSize="28">
 				<Clicked>
 					<NavigateTo Target="{navReference}" />
 				</Clicked>
-			</customButton>
+			</tg.Button>
+			
+			<tg.Separator />
 		</Each>
 	</StackPanel>
 </Page>

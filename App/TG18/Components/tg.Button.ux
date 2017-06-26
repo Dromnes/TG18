@@ -1,0 +1,11 @@
+<Panel HitTestMode="LocalBoundsAndChildren" ux:Class="tg.Button" ux:Name="customButton" Margin="4">
+	<string ux:Property="Text" />
+	<float4 ux:Property="TextColor" />
+	<int ux:Property="FontSize" />
+
+	<tBuilt Value="{ReadProperty customButton.Text}" Alignment="Center" FontSize="{ReadProperty customButton.FontSize}" Color="{ReadProperty customButton.TextColor}" />
+
+	<WhilePressed>
+        <Scale Factor=".95" Duration=".08" Easing="QuadraticOut" />
+	</WhilePressed>
+</Panel>

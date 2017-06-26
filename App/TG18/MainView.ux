@@ -1,11 +1,17 @@
 <App>
+	<iOS.StatusBarConfig Style="Light" />
+	<Android.StatusBarConfig Color="{colorPalette.mdRed.code}" />
 	<Font File="Assets/Fonts/Built.ttf" ux:Global="built" />
-	<Text ux:Class="tBuilt" Font="built" />
+
 	<JavaScript>
-		var colorPalette = require("Assets/colorPalette");
+		var colorPalette = require("Assets/JavaScript/colorPalette");
+		var activePage = require("Assets/JavaScript/activePage");
+		var helperFunctions = require("Assets/JavaScript/helperFunctions");
 
 		module.exports = {
-			colorPalette: colorPalette.colors
+			colorPalette: colorPalette.colors,
+			activePage: activePage,
+			helperFunctions: helperFunctions
 		}
 	</JavaScript>
 
@@ -14,10 +20,23 @@
 			<GradientStop Offset=".4" Color="{colorPalette.mdLightGreen.code}" />
 			<GradientStop Offset="1" Color="{colorPalette.mdDarkGreen.code}" />
 		</LinearGradient>
-		<PageControl ux:Name="nav">
+		<Image Layer="Background" File="Assets/Dew.png" StretchMode="UniformToFill" Opacity=".9">
+			<Blur Radius="15" />
+		</Image>
+
+		<StackPanel Dock="Top">
+			<Panel Color="{colorPalette.mdRed.code}" Height="45">
+				<DoubleTapped>
+					<Callback Handler="{helperFunctions.gotoHomePage}" />
+				</DoubleTapped>
+				<Text Value="{activePage.text}" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite.code}"/>
+			</Panel>
+		</StackPanel>
+		
+		<PageControl ux:Name="nav" Active="{activePage.navReference}">
 			<homePage />
 			<heightControlPage />
-			<lightControlPage />
+			<lightControlPage Freeze="WhileNavigating" />
 			<pcControlPage />
 		</PageControl>
 

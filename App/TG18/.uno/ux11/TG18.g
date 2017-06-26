@@ -1,0 +1,10 @@
+.uno/ux11/customButton.g.uno
+.uno/ux11/customButtonCircle.g.uno
+.uno/ux11/MainView.g.uno
+.uno/ux11/tBuilt.g.uno
+.uno/ux11/heightControlPage.g.uno
+.uno/ux11/homePage.g.uno
+.uno/ux11/lightControlPage.g.uno
+.uno/ux11/colorButton.g.uno
+.uno/ux11/pcControlPage.g.uno
+.uno/ux11/TG18.unoproj.g.uno

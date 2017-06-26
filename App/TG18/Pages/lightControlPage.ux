@@ -1,52 +1,20 @@
 <Page ux:Class="lightControlPage" ux:Name="lightControlPage">
-
-	<customButtonCircle ux:Class="colorButton" ux:Name="colorButton">
-		<string ux:Property="Name" />
-		<float4 ux:Property="ButtonColor" />
-
-		<LinearGradient AngleDegrees="120">
-			<GradientStop Offset=".4" Color="{ReadProperty colorButton.ButtonColor}" />
-			<GradientStop Offset="1" Color="{colorPalette.mdBlack.code}" />
-		</LinearGradient>
-	</customButtonCircle>
-
 	<JavaScript File="lightControlPage.js" />
-	<StackPanel>
-		<StackPanel Dock="Top">
-			<Panel Color="{colorPalette.mdRed.code}" Height="45">
-				<Text Value="Lysstyring" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite.code}"/>
-			</Panel>
+
+	<Activated>
+		<JavaScript>
+			var helperFunctions = require("../Assets/JavaScript/helperFunctions");
+			helperFunctions.changeActivePage("lightControlPage");
+		</JavaScript>
+	</Activated>
+
+	<ScrollView>
+		<StackPanel>
+			<Grid RowCount="6" ColumnCount="4">
+				<Each Items="{lightButtonsObs}">
+					<tg.ColorButton Height="60" Margin="0, 20, 0, 10" ButtonName="{name}" ButtonColor="{color}" Text="{text}" TextColor="{textColor}" FontSize="{fontSize}" />
+				</Each>
+			</Grid>
 		</StackPanel>
-		<Grid RowCount="6" ColumnCount="4">
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="dimUp" ButtonColor="{colorPalette.white.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="dimDown" ButtonColor="{colorPalette.white.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="off" ButtonColor="{colorPalette.black.code}" Text="OFF" TextColor="{colorPalette.mdWhite.code}" FontSize="28"/>
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="on" ButtonColor="{colorPalette.red.code}" Text="ON" TextColor="{colorPalette.mdWhite.code}" FontSize="28"/>
-
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="red" ButtonColor="{colorPalette.red.code}" Text="R" TextColor="{colorPalette.mdBlack.code}" FontSize="28"/>
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="green" ButtonColor="{colorPalette.green.code}" Text="G" TextColor="{colorPalette.mdBlack.code}" FontSize="28"/>
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="blue" ButtonColor="{colorPalette.blue.code}" Text="B" TextColor="{colorPalette.mdWhite.code}" FontSize="28"/>
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="white" ButtonColor="{colorPalette.white.code}" Text="W" TextColor="{colorPalette.mdBlack.code}" FontSize="26"/>
-
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="lightRed" ButtonColor="{colorPalette.lightRed.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="lightGreen" ButtonColor="{colorPalette.lightGreen.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="lightBlue" ButtonColor="{colorPalette.lightBlue.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="flash" ButtonColor="{colorPalette.grey.code}" Text="FLASH" TextColor="{colorPalette.mdBlack.code}" FontSize="18"/>
-
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="orange" ButtonColor="{colorPalette.orange.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="cyan" ButtonColor="{colorPalette.cyan.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="violet" ButtonColor="{colorPalette.violet.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="strobe" ButtonColor="{colorPalette.grey.code}" Text="STROBE" TextColor="{colorPalette.mdBlack.code}" FontSize="18"/>
-
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="lightOrange" ButtonColor="{colorPalette.lightOrange.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="lightTurquoise" ButtonColor="{colorPalette.lightTurquoise.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="purple" ButtonColor="{colorPalette.purple.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="fade" ButtonColor="{colorPalette.grey.code}" Text="FADE" TextColor="{colorPalette.mdBlack.code}" FontSize="18"/>
-
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="yellow" ButtonColor="{colorPalette.yellow.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="turquoise" ButtonColor="{colorPalette.turquoise.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="pink" ButtonColor="{colorPalette.pink.code}" />
-			<colorButton Height="60" Margin="0, 20, 0, 10" Name="smooth" ButtonColor="{colorPalette.grey.code}" Text="SMOOTH" TextColor="{colorPalette.mdBlack.code}" FontSize="18"/>
-		</Grid>
-	</StackPanel>
+	</ScrollView>
 </Page>

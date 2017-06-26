@@ -1,5 +1,8 @@
-.uno/CodeCompletion/ux11/customButton.g.uno
 .uno/CodeCompletion/ux11/MainView.g.uno
+.uno/CodeCompletion/ux11/tg.Button.g.uno
+.uno/CodeCompletion/ux11/tg.CircleButton.g.uno
+.uno/CodeCompletion/ux11/tg.ColorButton.g.uno
+.uno/CodeCompletion/ux11/tg.Separator.g.uno
 .uno/CodeCompletion/ux11/tBuilt.g.uno
 .uno/CodeCompletion/ux11/heightControlPage.g.uno
 .uno/CodeCompletion/ux11/homePage.g.uno

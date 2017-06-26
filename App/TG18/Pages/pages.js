@@ -25,4 +25,6 @@ var pages = {
 	}
 };
 
-module.exports = pages;
+module.exports = {
+	pages: pages
+}

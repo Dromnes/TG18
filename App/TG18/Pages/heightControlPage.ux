@@ -1,15 +1,18 @@
 <Page ux:Class="heightControlPage" ux:Name="heightControlPage">
 	<JavaScript File="heightControlPage.js" />
-	<Panel>
-		<StackPanel Dock="Top">
-			<Panel Color="{colorPalette.mdRed.code}" Height="45">
-				<Text Value="Hev og senk" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite.code}"/>
-			</Panel>
-		</StackPanel>
 
+	<Activated>
+		<JavaScript>
+			var helperFunctions = require("../Assets/JavaScript/helperFunctions");
+			helperFunctions.changeActivePage("heightControlPage");
+		</JavaScript>
+	</Activated>
+
+	<Panel>
 		<StackPanel Alignment="VerticalCenter">
-			<customButton BoxSizing="FillAspect" Aspect="1" Text="Opp" TextColor="{colorPalette.mdBlack.code}" Width="50%" FontSize="72" />
-			<customButton BoxSizing="FillAspect" Aspect="1" Text="Ned" TextColor="{colorPalette.mdBlack.code}" Width="50%" FontSize="72" />
+			<tg.Button BoxSizing="FillAspect" Aspect="2" Text="Opp" TextColor="{colorPalette.mdBlack.code}" Width="100%" FontSize="72" />
+			<tg.Separator />
+			<tg.Button BoxSizing="FillAspect" Aspect="2" Text="Ned" TextColor="{colorPalette.mdBlack.code}" Width="100%" FontSize="72" />
 		</StackPanel>
 	</Panel>
 </Page>

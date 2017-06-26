@@ -7,6 +7,6 @@
   "Includes": [
     "*",
     "Pages/pages.js:Bundle",
-    "Assets/colorPalette.js:Bundle"
+    "Assets/JavaScript/*.js:Bundle"
   ]
 }

@@ -1,16 +1,18 @@
 <Page ux:Class="pcControlPage" ux:Name="pcControlPage">
 	<JavaScript File="pcControlPage.js" />
+
+	<Activated>
+		<JavaScript>
+			var helperFunctions = require("../Assets/JavaScript/helperFunctions");
+			helperFunctions.changeActivePage("pcControlPage");
+		</JavaScript>
+	</Activated>
+
 	<Panel>
-		<StackPanel Dock="Top">
-			<Panel Color="{colorPalette.mdRed.code}" Height="45">
-				<Text Value="PC-behandling" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite.code}"/>
-			</Panel>
-		</StackPanel>
 		<StackPanel Alignment="VerticalCenter">
-			<Each Items="{pcControlButtons}">
-				<customButton BoxSizing="FillAspect" Aspect="1" Text="{text}" TextColor="{textColor}" Width="50%" FontSize="36">
-				</customButton>
-			</Each>
+			<tg.Button BoxSizing="FillAspect" Aspect="2" Text="Restart" TextColor="{colorPalette.mdBlack.code}" Width="100%" FontSize="72" />
+			<tg.Separator />
+			<tg.Button BoxSizing="FillAspect" Aspect="2" Text="ON/OFF" TextColor="{colorPalette.mdBlack.code}" Width="100%" FontSize="72" />
 		</StackPanel>
 	</Panel>
 </Page>

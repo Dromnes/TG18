@@ -1,0 +1,13 @@
+<Circle HitTestMode="LocalBoundsAndChildren" ux:Class="tg.CircleButton" ux:Name="circleButton">
+	<string ux:Property="Text" />
+	<float4 ux:Property="TextColor" />
+	<int ux:Property="FontSize" />
+
+	<tBuilt Value="{ReadProperty circleButton.Text}" Alignment="Center" FontSize="{ReadProperty circleButton.FontSize}" Color="{ReadProperty circleButton.TextColor}" />
+
+	<Shadow Size="5" Angle="70" />
+
+	<WhilePressed>
+		<Scale Factor=".9" Duration=".15" />
+	</WhilePressed>
+</Circle>
