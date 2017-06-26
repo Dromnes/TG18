@@ -1,12 +1,6 @@
 <Page ux:Class="lightControlPage" ux:Name="lightControlPage">
+	<ResourceFloat4 Key="TabColor" Value="{tabColor}" />
 	<JavaScript File="lightControlPage.js" />
-
-	<Activated>
-		<JavaScript>
-			var helperFunctions = require("../Assets/JavaScript/helperFunctions");
-			helperFunctions.changeActivePage("lightControlPage");
-		</JavaScript>
-	</Activated>
 
 	<ScrollView>
 		<StackPanel>

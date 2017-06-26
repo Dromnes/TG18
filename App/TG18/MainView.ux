@@ -1,51 +1,47 @@
-<App>
+<App Background="#000">
 	<iOS.StatusBarConfig Style="Light" />
 	<Android.StatusBarConfig Color="{colorPalette.mdRed.code}" />
 	<Font File="Assets/Fonts/Built.ttf" ux:Global="built" />
 
 	<JavaScript>
 		var colorPalette = require("Assets/JavaScript/colorPalette");
-		var activePage = require("Assets/JavaScript/activePage");
+		var pages = require("Pages/pages");
 		var helperFunctions = require("Assets/JavaScript/helperFunctions");
 
 		module.exports = {
 			colorPalette: colorPalette.colors,
-			activePage: activePage,
-			helperFunctions: helperFunctions
+			pages: pages.pages,
+            pageCount: pages.pages.length
 		}
 	</JavaScript>
 
 	<ClientPanel>
-		<LinearGradient AngleDegrees="75">
-			<GradientStop Offset=".4" Color="{colorPalette.mdLightGreen.code}" />
-			<GradientStop Offset="1" Color="{colorPalette.mdDarkGreen.code}" />
-		</LinearGradient>
-		<Image Layer="Background" File="Assets/Dew.png" StretchMode="UniformToFill" Opacity=".9">
-			<Blur Radius="15" />
+		<Image Layer="Background" File="Assets/TG.png" StretchMode="UniformToFill" Opacity=".9">
+			<Blur Radius="50" />
 		</Image>
 
-		<StackPanel Dock="Top">
-			<Panel Color="{colorPalette.mdRed.code}" Height="45">
-				<DoubleTapped>
-					<Callback Handler="{helperFunctions.gotoHomePage}" />
-				</DoubleTapped>
-				<Text Value="{activePage.text}" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite.code}"/>
-			</Panel>
-		</StackPanel>
-		
-		<PageControl ux:Name="nav" Active="{activePage.navReference}">
-			<homePage />
-			<heightControlPage />
-			<lightControlPage Freeze="WhileNavigating" />
-			<pcControlPage />
-		</PageControl>
+	    <PageControl ux:Name="pages">
+	        <Each Items="{pages}" MatchKey="navReference">
+	            <heightControlPage ux:Template="heightControlPage" />
+	            <lightControlPage ux:Template="lightControlPage" />
+	            <pcControlPage ux:Template="pcControlPage" />
+	        </Each>
+	    </PageControl>
 
-		<PageIndicator Dock="Bottom" Navigation="nav" Alignment="Center">
-			<Circle ux:Template="Dot" Height="10" Width="10" Margin="10" Color="{colorPalette.mdWhite.code}">
-				<ActivatingAnimation>
-					<Scale Factor="1.5" />
-				</ActivatingAnimation>
-			</Circle>
-		</PageIndicator>
+	    <PageIndicator Dock="Bottom" Height="45" Navigation="pages">
+	        <GridLayout ColumnCount="{pageCount}" />
+	        <Panel ux:Template="Dot" Height="45">
+	            <ActivatingAnimation>
+	                <Scale Target="icon" Factor="1.5" />
+	            </ActivatingAnimation>
+	            <Clicked>
+	                <NavigateTo Target="{Page Visual}"/>
+	            </Clicked>
+	            <Panel ux:Name="icon" Padding="10">
+	                <Image Source="{Page Icon}" />
+	            </Panel>
+	            <Rectangle Color="{Page TabColor}" Opacity=".75" />
+	        </Panel>
+	    </PageIndicator>
 	</ClientPanel>
 </App>
