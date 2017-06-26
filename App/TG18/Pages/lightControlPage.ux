@@ -1,16 +1,14 @@
 <Page ux:Class="lightControlPage" ux:Name="lightControlPage">
+	<ResourceFloat4 Key="TabColor" Value="{tabColor}" />
 	<JavaScript File="lightControlPage.js" />
-	<StackPanel>
 
-		<Grid RowCount="6" ColumnCount="4">
-			<Each Items="{lightControlButtons}">
-				<customButtonCircle Height="60" Margin="0, 20, 0, 10" Text="{text}" TextColor="{textColor}" Font="{font}" FontSize="20">
-					<LinearGradient AngleDegrees="120">
-						<GradientStop Offset=".4" Color="{color}" />
-						<GradientStop Offset="1" Color="{colorPalette.mdBlack.code}" />
-					</LinearGradient>
-				</customButtonCircle>
-			</Each>
-		</Grid>
-	</StackPanel>
+	<ScrollView>
+		<StackPanel>
+			<Grid RowCount="6" ColumnCount="4">
+				<Each Items="{lightButtonsObs}">
+					<tg.ColorButton Height="60" Margin="0, 20, 0, 10" ButtonName="{name}" ButtonColor="{color}" Text="{text}" TextColor="{textColor}" Font="{font}" FontSize="{fontSize}" />
+				</Each>
+			</Grid>
+		</StackPanel>
+	</ScrollView>
 </Page>

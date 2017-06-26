@@ -1,4 +1,4 @@
-<Circle ux:Class="customButtonCircle" ux:Name="customButtonCircle">
+<Circle HitTestMode="LocalBoundsAndChildren" ux:Class="tg.CircleButton" ux:Name="circleButton">
 	<string ux:Property="Text" />
 	<float4 ux:Property="TextColor" />
 	<Font ux:Property="Font" />
@@ -9,6 +9,6 @@
 	<Shadow Size="5" Angle="70" />
 
 	<WhilePressed>
-		<Scale Factor="1.2" Duration=".15" />
+		<Scale Factor=".9" Duration=".15" />
 	</WhilePressed>
 </Circle>

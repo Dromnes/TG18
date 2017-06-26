@@ -1,18 +1,12 @@
 <Page ux:Class="heightControlPage" ux:Name="heightControlPage">
+	<ResourceFloat4 Key="TabColor" Value="{tabColor}" />
 	<JavaScript File="heightControlPage.js" />
 
-	<JavaScript>
-		var pageTitleTest = "PageTitle";
-		
-		module.exports = {
-			pageTitleTest: pageTitleTest
-		}
-	</JavaScript>
 	<Panel>
-
 		<StackPanel Alignment="VerticalCenter">
-			<customButton BoxSizing="FillAspect" Aspect="1" Text="&#xf106;" TextColor="{colorPalette.mdBlack.code}" Width="50%" Font="fa" FontSize="150" />
-			<customButton BoxSizing="FillAspect" Aspect="1" Text="&#xf107;" TextColor="{colorPalette.mdBlack.code}" Width="50%" Font="fa" FontSize="150" />
+			<tg.Button BoxSizing="FillAspect" Aspect="2" Text="&#xf106;" TextColor="{colorPalette.mdBlack.code}" Width="100%" Font="fa" FontSize="150" />
+			<tg.Separator />
+			<tg.Button BoxSizing="FillAspect" Aspect="2" Text="&#xf107;" TextColor="{colorPalette.mdBlack.code}" Width="100%" Font="fa" FontSize="150" />
 		</StackPanel>
 	</Panel>
 </Page>

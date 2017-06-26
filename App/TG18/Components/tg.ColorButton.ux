@@ -1,0 +1,9 @@
+<tg.CircleButton ux:Class="tg.ColorButton" ux:Name="colorButton">
+	<string ux:Property="ButtonName" />
+	<float4 ux:Property="ButtonColor" />
+
+	<LinearGradient AngleDegrees="120">
+		<GradientStop Offset=".4" Color="{ReadProperty colorButton.ButtonColor}" />
+		<GradientStop Offset="1" Color="{colorPalette.mdBlack.code}" />
+	</LinearGradient>
+</tg.CircleButton >

@@ -1,4 +1,5 @@
 var pages = require("Pages/pages");
+pages = pages.pages;
 var pagesArray = [];
 
 for(var key in pages) {
@@ -7,7 +8,5 @@ for(var key in pages) {
 
 module.exports = {
 	pagesArray: pagesArray,
-
-	name: pagesArray.name,
 	navReference: pagesArray.navReference
 }

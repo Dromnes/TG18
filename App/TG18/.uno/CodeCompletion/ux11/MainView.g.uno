@@ -47,6 +47,7 @@ public partial class MainView: Fuse.App
     global::Uno.UX.Property<string> temp_Value_inst;
     global::Uno.UX.Property<float4> temp_TextColor_inst;
     global::Uno.UX.Property<float4> temp1_Color_inst;
+<<<<<<< HEAD
     global::Uno.UX.Property<Fuse.Visual> temp2_Target_inst;
     global::Uno.UX.Property<float4> temp3_Color_inst;
     global::Uno.UX.Property<float4> temp4_Color_inst;
@@ -57,6 +58,17 @@ public partial class MainView: Fuse.App
     global::Uno.UX.NameTable __g_nametable;
     static string[] __g_static_nametable = new string[] {
         "pageHeader",
+=======
+    global::Uno.UX.Property<Fuse.Visual> nav_Active_inst;
+    global::Uno.UX.Property<float4> temp2_Color_inst;
+    global::Uno.UX.Property<float4> temp3_Color_inst;
+    [global::Uno.UX.UXGlobalResource("built")] public static readonly Fuse.Font built;
+    internal global::Fuse.Reactive.EventBinding temp_eb0;
+    internal global::Fuse.Controls.PageControl nav;
+    global::Uno.UX.NameTable __g_nametable;
+    static string[] __g_static_nametable = new string[] {
+        "temp_eb0",
+>>>>>>> 10b490d17f581411dec90f73b2587559addec886
         "nav"
     };
     static MainView()
@@ -181,6 +193,7 @@ public partial class MainView: Fuse.App
     }
     void InitializeUX()
     {
+<<<<<<< HEAD
         var temp5 = new global::Fuse.Reactive.FuseJS.DiagnosticsImplModule();
         var temp6 = new global::Fuse.Reactive.FuseJS.Http();
         var temp7 = new global::Fuse.Reactive.FuseJS.TimerModule();
@@ -287,13 +300,132 @@ public partial class MainView: Fuse.App
         __g_nametable.Objects.Add(pageHeader);
         __g_nametable.Objects.Add(nav);
         this.Children.Add(temp38);
+=======
+        var temp4 = new global::Fuse.Reactive.FuseJS.DiagnosticsImplModule();
+        var temp5 = new global::Fuse.Reactive.FuseJS.Http();
+        var temp6 = new global::Fuse.Reactive.FuseJS.TimerModule();
+        var temp7 = new global::Fuse.Drawing.BrushConverter();
+        var temp8 = new global::Fuse.Triggers.BusyTaskModule();
+        var temp9 = new global::Fuse.Testing.UnoTestingHelper();
+        var temp10 = new global::Fuse.FileSystem.FileSystemModule();
+        var temp11 = new global::Fuse.Storage.StorageModule();
+        var temp12 = new global::Fuse.WebSocket.WebSocketClientModule();
+        var temp13 = new global::Polyfills.Window.WindowModule();
+        var temp14 = new global::FuseJS.Globals();
+        var temp15 = new global::FuseJS.Lifecycle();
+        var temp16 = new global::FuseJS.Environment();
+        var temp17 = new global::FuseJS.Base64();
+        var temp18 = new global::FuseJS.Bundle();
+        var temp19 = new global::FuseJS.FileReaderImpl();
+        var temp20 = new global::FuseJS.UserEvents();
+        __g_nametable = new global::Uno.UX.NameTable(null, __g_static_nametable);
+        var temp21 = new global::Fuse.Reactive.Data("colorPalette");
+        var temp22 = new global::Fuse.Reactive.Member(temp21, "mdLightGreen");
+        var temp23 = new global::Fuse.Reactive.Data("colorPalette");
+        var temp24 = new global::Fuse.Reactive.Member(temp23, "mdDarkGreen");
+        var temp25 = new global::Fuse.Reactive.Data("helperFunctions");
+        var temp26 = new global::Fuse.Reactive.Member(temp25, "gotoHomePage");
+        var temp27 = new global::Fuse.Reactive.Data("activePage");
+        var temp = new global::Fuse.Controls.Text();
+        temp_Value_inst = new TG18_FuseControlsTextControl_Value_Property(temp, __selector0);
+        var temp28 = new global::Fuse.Reactive.Member(temp27, "text");
+        var temp29 = new global::Fuse.Reactive.Data("colorPalette");
+        var temp30 = new global::Fuse.Reactive.Member(temp29, "mdWhite");
+        temp_TextColor_inst = new TG18_FuseControlsTextControl_TextColor_Property(temp, __selector1);
+        var temp31 = new global::Fuse.Reactive.Member(temp30, "code");
+        var temp32 = new global::Fuse.Reactive.Data("colorPalette");
+        var temp33 = new global::Fuse.Reactive.Member(temp32, "mdRed");
+        var temp1 = new global::Fuse.Controls.Panel();
+        temp1_Color_inst = new TG18_FuseControlsPanel_Color_Property(temp1, __selector2);
+        var temp34 = new global::Fuse.Reactive.Member(temp33, "code");
+        var temp35 = new global::Fuse.Reactive.Data("activePage");
+        nav = new global::Fuse.Controls.PageControl();
+        nav_Active_inst = new TG18_FuseControlsNavigationControl_Active_Property(nav, __selector3);
+        var temp36 = new global::Fuse.Reactive.Member(temp35, "navReference");
+        var temp2 = new global::Fuse.Drawing.GradientStop();
+        temp2_Color_inst = new TG18_FuseDrawingGradientStop_Color_Property(temp2, __selector2);
+        var temp37 = new global::Fuse.Reactive.Member(temp22, "code");
+        var temp3 = new global::Fuse.Drawing.GradientStop();
+        temp3_Color_inst = new TG18_FuseDrawingGradientStop_Color_Property(temp3, __selector2);
+        var temp38 = new global::Fuse.Reactive.Member(temp24, "code");
+        var temp39 = new global::Fuse.Reactive.JavaScript(__g_nametable);
+        var temp40 = new global::Fuse.Controls.ClientPanel();
+        var temp41 = new global::Fuse.Drawing.LinearGradient();
+        var temp42 = new global::Fuse.Controls.Image();
+        var temp43 = new global::Fuse.Controls.StackPanel();
+        var temp44 = new global::Fuse.Gestures.DoubleTapped();
+        var temp45 = new global::Fuse.Triggers.Actions.Callback();
+        temp_eb0 = new global::Fuse.Reactive.EventBinding(temp26, __g_nametable);
+        var temp46 = new global::Fuse.Reactive.DataBinding(temp_Value_inst, temp28, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        var temp47 = new global::Fuse.Reactive.DataBinding(temp_TextColor_inst, temp31, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        var temp48 = new global::Fuse.Reactive.DataBinding(temp1_Color_inst, temp34, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        var temp49 = new global::homePage();
+        var temp50 = new global::heightControlPage();
+        var temp51 = new global::lightControlPage();
+        var temp52 = new global::pcControlPage();
+        var temp53 = new global::Fuse.Reactive.DataBinding(nav_Active_inst, temp36, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        var temp54 = new global::Fuse.Controls.PageIndicator(nav);
+        var Dot = new Template(this, this);
+        var temp55 = new global::Fuse.Reactive.DataBinding(temp2_Color_inst, temp37, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        var temp56 = new global::Fuse.Reactive.DataBinding(temp3_Color_inst, temp38, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        temp39.Code = "\n\t\tvar colorPalette = require(\"Assets/JavaScript/colorPalette\");\n\t\tvar activePage = require(\"Assets/JavaScript/activePage\");\n\t\tvar helperFunctions = require(\"Assets/JavaScript/helperFunctions\");\n\n\t\tmodule.exports = {\n\t\t\tcolorPalette: colorPalette.colors,\n\t\t\tactivePage: activePage,\n\t\t\thelperFunctions: helperFunctions\n\t\t}\n\t";
+        temp39.LineNumber = 4;
+        temp39.FileName = "MainView.ux";
+        temp40.Background = temp41;
+        temp40.Children.Add(temp42);
+        temp40.Children.Add(temp43);
+        temp40.Children.Add(nav);
+        temp40.Children.Add(temp54);
+        temp40.Bindings.Add(temp55);
+        temp40.Bindings.Add(temp56);
+        temp41.AngleDegrees = 75f;
+        temp41.Stops.Add(temp2);
+        temp41.Stops.Add(temp3);
+        temp2.Offset = 0.4f;
+        temp3.Offset = 1f;
+        temp42.StretchMode = Fuse.Elements.StretchMode.UniformToFill;
+        temp42.Opacity = 0.8f;
+        temp42.Layer = Fuse.Layer.Background;
+        temp42.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../Assets/Dew_blurred.png"));
+        global::Fuse.Controls.DockPanel.SetDock(temp43, Fuse.Layouts.Dock.Top);
+        temp43.Children.Add(temp1);
+        temp1.Height = new Uno.UX.Size(45f, Uno.UX.Unit.Unspecified);
+        temp1.Children.Add(temp44);
+        temp1.Children.Add(temp);
+        temp1.Bindings.Add(temp48);
+        temp44.Actions.Add(temp45);
+        temp44.Bindings.Add(temp_eb0);
+        temp45.Handler += temp_eb0.OnEvent;
+        temp.FontSize = 22f;
+        temp.Alignment = Fuse.Elements.Alignment.Center;
+        temp.Bindings.Add(temp46);
+        temp.Bindings.Add(temp47);
+        nav.Name = __selector4;
+        nav.Children.Add(temp49);
+        nav.Children.Add(temp50);
+        nav.Children.Add(temp51);
+        nav.Children.Add(temp52);
+        nav.Bindings.Add(temp53);
+        temp51.Freeze = Fuse.Controls.PageFreeze.WhileNavigating;
+        temp54.Alignment = Fuse.Elements.Alignment.Center;
+        global::Fuse.Controls.DockPanel.SetDock(temp54, Fuse.Layouts.Dock.Bottom);
+        temp54.Templates.Add(Dot);
+        __g_nametable.This = this;
+        __g_nametable.Objects.Add(temp_eb0);
+        __g_nametable.Objects.Add(nav);
+>>>>>>> 10b490d17f581411dec90f73b2587559addec886
         this.Children.Add(temp39);
         this.Children.Add(temp40);
     }
     static global::Uno.UX.Selector __selector0 = "Value";
     static global::Uno.UX.Selector __selector1 = "TextColor";
     static global::Uno.UX.Selector __selector2 = "Color";
+<<<<<<< HEAD
     static global::Uno.UX.Selector __selector3 = "Target";
     static global::Uno.UX.Selector __selector4 = "pageHeader";
     static global::Uno.UX.Selector __selector5 = "nav";
+=======
+    static global::Uno.UX.Selector __selector3 = "Active";
+    static global::Uno.UX.Selector __selector4 = "nav";
+>>>>>>> 10b490d17f581411dec90f73b2587559addec886
 }

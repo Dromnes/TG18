@@ -1,16 +1,17 @@
-var pages = {
-	"homePage": {
-		id: 0,
-		name: "Homepage",
-		text: "Hjem",
-		navReference: "homePage"
+var pages = [
+    {
+	    "name":"Height Control",
+	    "navReference":"heightControlPage",
+	    "tabColor":"#f4782a",
+	    "icon":""
 	},
-	"heightControlPage": {
-		id: 1,
-		name: "Height control",
-		text: "Hev og senk",
-		navReference: "heightControlPage"
+    {
+    	"name":"Light control",
+	    "navReference":"lightControlPage",
+	    "tabColor":"#aaa",
+	    "icon":""
 	},
+<<<<<<< HEAD
 	"lightControlPage": {
 		id: 2,
 		name: "Light control",
@@ -22,7 +23,16 @@ var pages = {
 		name: "PC control",
 		text: "PC-behandling",
 		navReference: "pcControlPage"
+=======
+    {
+		"name":"PC control",
+	    "navReference":"pcControlPage",
+	    "tabColor":"#30c0ea",
+	    "icon":""
+>>>>>>> 10b490d17f581411dec90f73b2587559addec886
 	}
-};
+];
 
-module.exports = pages;
+module.exports = {
+	pages: pages
+}
