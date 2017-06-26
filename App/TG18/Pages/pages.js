@@ -19,7 +19,7 @@ var pages = {
 	},
 	"pcControlPage": {
 		id: 3,
-		name: "Pc control",
+		name: "PC control",
 		text: "PC-behandling",
 		navReference: "pcControlPage"
 	}

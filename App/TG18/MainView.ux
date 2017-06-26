@@ -1,26 +1,43 @@
 <App>
+	<string ux:Global="pageTitle" ux:Value="Default" />
 	<Font File="Assets/Fonts/Built.ttf" ux:Global="built" />
 	<Text ux:Class="tBuilt" Font="built" />
+
+	<Font File="Assets/Fonts/fontawesome-webfont.ttf" ux:Global="fa" />
+	<ux:Include File="Assets/FA-Icons.ux" />
+
 	<JavaScript>
 		var colorPalette = require("Assets/colorPalette");
+		var pages = require("Pages/pages");
+		var pageTitleTest = require("Assets/Title");
 
 		module.exports = {
-			colorPalette: colorPalette.colors
+			colorPalette: colorPalette.colors,
+			pages: pages,
+			pageTitleTest: pageTitleTest
 		}
 	</JavaScript>
+	<JavaScript File="Assets/Title.js" />
 
 	<ClientPanel>
-		<LinearGradient AngleDegrees="75">
+		<LinearGradient AngleDegrees="105">
 			<GradientStop Offset=".4" Color="{colorPalette.mdLightGreen.code}" />
 			<GradientStop Offset="1" Color="{colorPalette.mdDarkGreen.code}" />
 		</LinearGradient>
+		<StackPanel Dock="Top" ux:Name="pageHeader">
+			<Panel Color="{colorPalette.mdRed.code}" Height="45">
+				<Text Value="{pageTitleTest}" FontSize="22" Alignment="Center" TextColor="{colorPalette.white.code}"/>
+			</Panel>
+			<DoubleTapped>
+				<NavigateTo Target="{pages.homePage.navReference}" />
+			</DoubleTapped>
+		</StackPanel>
 		<PageControl ux:Name="nav">
 			<homePage />
 			<heightControlPage />
 			<lightControlPage />
 			<pcControlPage />
 		</PageControl>
-
 		<PageIndicator Dock="Bottom" Navigation="nav" Alignment="Center">
 			<Circle ux:Template="Dot" Height="10" Width="10" Margin="10" Color="{colorPalette.mdWhite.code}">
 				<ActivatingAnimation>

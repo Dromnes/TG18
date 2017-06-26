@@ -1,16 +1,10 @@
 <Page ux:Class="pcControlPage" ux:Name="pcControlPage">
 	<JavaScript File="pcControlPage.js" />
 	<Panel>
-		<StackPanel Dock="Top">
-			<Panel Color="{colorPalette.mdRed.code}" Height="45">
-				<Text Value="PC-behandling" FontSize="22" Alignment="Center" TextColor="{colorPalette.mdWhite.code}"/>
-			</Panel>
-		</StackPanel>
+
 		<StackPanel Alignment="VerticalCenter">
-			<Each Items="{pcControlButtons}">
-				<customButton BoxSizing="FillAspect" Aspect="1" Text="{text}" TextColor="{textColor}" Width="50%" FontSize="36">
-				</customButton>
-			</Each>
+			<customButton BoxSizing="FillAspect" Aspect="1" Text="&#xf021;" TextColor="{colorPalette.mdBlack.code}" Width="50%" Font="fa" FontSize="150" />
+			<customButton BoxSizing="FillAspect" Aspect="1" Text="&#xf011;" TextColor="{colorPalette.mdBlack.code}" Width="50%" Font="fa" FontSize="150" />
 		</StackPanel>
 	</Panel>
 </Page>

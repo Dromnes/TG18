@@ -1,15 +1,18 @@
 <Panel ux:Class="customButton" ux:Name="customButton" Margin="4">
 	<string ux:Property="Text" />
 	<float4 ux:Property="TextColor" />
+	<Font ux:Property="Font" />
 	<int ux:Property="FontSize" />
 
-	<tBuilt Value="{ReadProperty customButton.Text}" Alignment="Center" FontSize="{ReadProperty customButton.FontSize}" Color="{ReadProperty customButton.TextColor}" />
+	<Text Value="{ReadProperty customButton.Text}" Alignment="Center" Font="{ReadProperty customButton.Font}" FontSize="{ReadProperty customButton.FontSize}" Color="{ReadProperty customButton.TextColor}" />
 
 	<LinearGradient AngleDegrees="120">
 		<GradientStop Offset=".4" Color="{colorPalette.grey.code}" />
 		<GradientStop Offset="1" Color="{colorPalette.mdBlack.code}" />
 	</LinearGradient>
 	<Shadow Size="5" Angle="70" />
+
+	<customStroke/>
 
 	<WhilePressed>
         <Scale Factor="1.05" Duration=".1" DurationBack=".15" />

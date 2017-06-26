@@ -1,4 +1,5 @@
 .uno/CodeCompletion/ux11/customButton.g.uno
+.uno/CodeCompletion/ux11/customButtonCircle.g.uno
 .uno/CodeCompletion/ux11/MainView.g.uno
 .uno/CodeCompletion/ux11/tBuilt.g.uno
 .uno/CodeCompletion/ux11/heightControlPage.g.uno
