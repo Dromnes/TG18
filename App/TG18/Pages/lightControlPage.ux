@@ -1,5 +1,6 @@
 <Page ux:Class="lightControlPage" ux:Name="lightControlPage">
 	<ResourceFloat4 Key="TabColor" Value="{tabColor}" />
+	<ResourceString Key="Icon" Value="&#xf0eb;" />
 	<JavaScript File="lightControlPage.js" />
 
 	<ScrollView>

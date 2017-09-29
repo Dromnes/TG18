@@ -1,5 +1,6 @@
 <Page ux:Class="pcControlPage" ux:Name="pcControlPage">
 	<ResourceFloat4 Key="TabColor" Value="{tabColor}" />
+	<ResourceString Key="Icon" Value="&#xf011;" />
 	<JavaScript File="pcControlPage.js" />
 
 	<Panel>

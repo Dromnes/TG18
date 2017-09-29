@@ -1,8 +1,4 @@
-.uno/ux11/customButton.g.uno
-.uno/ux11/customButtonCircle.g.uno
 .uno/ux11/MainView.g.uno
-.uno/ux11/tBuilt.g.uno
-<<<<<<< HEAD
 .uno/ux11/fa_500px.g.uno
 .uno/ux11/fa_adjust.g.uno
 .uno/ux11/fa_adn.g.uno
@@ -697,14 +693,12 @@
 .uno/ux11/fa_youtube.g.uno
 .uno/ux11/fa_youtube_play.g.uno
 .uno/ux11/fa_youtube_square.g.uno
+.uno/ux11/tg.Button.g.uno
+.uno/ux11/tg.CircleButton.g.uno
+.uno/ux11/tg.ColorButton.g.uno
+.uno/ux11/tg.Separator.g.uno
+.uno/ux11/tBuilt.g.uno
 .uno/ux11/heightControlPage.g.uno
-.uno/ux11/homePage.g.uno
 .uno/ux11/lightControlPage.g.uno
-=======
-.uno/ux11/heightControlPage.g.uno
-.uno/ux11/homePage.g.uno
-.uno/ux11/lightControlPage.g.uno
-.uno/ux11/colorButton.g.uno
->>>>>>> 10b490d17f581411dec90f73b2587559addec886
 .uno/ux11/pcControlPage.g.uno
 .uno/ux11/TG18.unoproj.g.uno

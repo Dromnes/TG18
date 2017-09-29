@@ -1,8 +1,9 @@
 [Uno.Compiler.UxGenerated]
 public partial class heightControlPage: Fuse.Controls.Page
 {
-    global::Uno.UX.Property<float4> temp_TextColor_inst;
+    global::Uno.UX.Property<float4> temp_Value_inst;
     global::Uno.UX.Property<float4> temp1_TextColor_inst;
+    global::Uno.UX.Property<float4> temp2_TextColor_inst;
     global::Uno.UX.NameTable __g_nametable;
     static string[] __g_static_nametable = new string[] {
     };
@@ -16,98 +17,58 @@ public partial class heightControlPage: Fuse.Controls.Page
     }
     void InitializeUX()
     {
+        var temp = new global::Fuse.Resources.ResourceFloat4();
+        temp_Value_inst = new TG18_FuseResourcesResourceFloat4_Value_Property(temp, __selector0);
+        var temp3 = new global::Fuse.Reactive.Data("tabColor");
         __g_nametable = new global::Uno.UX.NameTable(null, __g_static_nametable);
-        var temp2 = new global::Fuse.Reactive.Data("colorPalette");
-        var temp3 = new global::Fuse.Reactive.Member(temp2, "mdBlack");
-<<<<<<< HEAD
-        var temp = new global::customButton();
-        temp_TextColor_inst = new TG18_customButton_TextColor_Property(temp, __selector0);
-        var temp4 = new global::Fuse.Reactive.Member(temp3, "code");
-        var temp5 = new global::Fuse.Reactive.Data("colorPalette");
-        var temp6 = new global::Fuse.Reactive.Member(temp5, "mdBlack");
-        var temp1 = new global::customButton();
-        temp1_TextColor_inst = new TG18_customButton_TextColor_Property(temp1, __selector0);
-        var temp7 = new global::Fuse.Reactive.Member(temp6, "code");
-        var temp8 = new global::Fuse.Reactive.JavaScript(__g_nametable);
-        var temp9 = new global::Fuse.Reactive.JavaScript(__g_nametable);
-        var temp10 = new global::Fuse.Controls.Panel();
-        var temp11 = new global::Fuse.Controls.StackPanel();
-        var temp12 = new global::Fuse.Reactive.DataBinding(temp_TextColor_inst, temp4, __g_nametable, Fuse.Reactive.BindingMode.Default);
-        var temp13 = new global::Fuse.Reactive.DataBinding(temp1_TextColor_inst, temp7, __g_nametable, Fuse.Reactive.BindingMode.Default);
-=======
-        var temp = new global::tg.Button();
-        temp_TextColor_inst = new TG18_tgButton_TextColor_Property(temp, __selector0);
-        var temp4 = new global::Fuse.Reactive.Member(temp3, "code");
-        var temp5 = new global::Fuse.Reactive.Data("colorPalette");
-        var temp6 = new global::Fuse.Reactive.Member(temp5, "mdBlack");
+        var temp4 = new global::Fuse.Reactive.Data("colorPalette");
+        var temp5 = new global::Fuse.Reactive.Member(temp4, "mdBlack");
         var temp1 = new global::tg.Button();
-        temp1_TextColor_inst = new TG18_tgButton_TextColor_Property(temp1, __selector0);
-        var temp7 = new global::Fuse.Reactive.Member(temp6, "code");
-        var temp8 = new global::Fuse.Reactive.JavaScript(__g_nametable);
-        var temp9 = new global::Fuse.Navigation.Activated();
-        var temp10 = new global::Fuse.Reactive.JavaScript(__g_nametable);
-        var temp11 = new global::Fuse.Controls.Panel();
-        var temp12 = new global::Fuse.Controls.StackPanel();
-        var temp13 = new global::Fuse.Reactive.DataBinding(temp_TextColor_inst, temp4, __g_nametable, Fuse.Reactive.BindingMode.Default);
-        var temp14 = new global::tg.Separator();
-        var temp15 = new global::Fuse.Reactive.DataBinding(temp1_TextColor_inst, temp7, __g_nametable, Fuse.Reactive.BindingMode.Default);
->>>>>>> 10b490d17f581411dec90f73b2587559addec886
-        this.Name = __selector1;
-        temp8.LineNumber = 2;
-        temp8.FileName = "Pages/heightControlPage.ux";
-        temp8.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../Pages/heightControlPage.js"));
-<<<<<<< HEAD
-        temp9.Code = "\n\t\tvar pageTitleTest = \"PageTitle\";\n\t\t\n\t\tmodule.exports = {\n\t\t\tpageTitleTest: pageTitleTest\n\t\t}\n\t";
-        temp9.LineNumber = 4;
-        temp9.FileName = "Pages/heightControlPage.ux";
-        temp10.Children.Add(temp11);
-        temp11.Alignment = Fuse.Elements.Alignment.VerticalCenter;
-        temp11.Children.Add(temp);
-        temp11.Children.Add(temp1);
-        temp.Aspect = 1f;
-        temp.Width = new Uno.UX.Size(50f, Uno.UX.Unit.Percent);
-        temp.BoxSizing = Fuse.Elements.Element.BoxSizingMode.FillAspect;
-        temp.Text = "Opp";
-        temp.FontSize = 72;
-        temp.Bindings.Add(temp12);
-        temp1.Aspect = 1f;
-        temp1.Width = new Uno.UX.Size(50f, Uno.UX.Unit.Percent);
-        temp1.BoxSizing = Fuse.Elements.Element.BoxSizingMode.FillAspect;
-        temp1.Text = "Ned";
-        temp1.FontSize = 72;
-        temp1.Bindings.Add(temp13);
-        __g_nametable.This = this;
-        this.Children.Add(temp8);
-        this.Children.Add(temp9);
-        this.Children.Add(temp10);
-=======
-        temp9.Nodes.Add(temp10);
-        temp10.Code = "\n\t\t\tvar helperFunctions = require(\"../Assets/JavaScript/helperFunctions\");\n\t\t\thelperFunctions.changeActivePage(\"heightControlPage\");\n\t\t";
-        temp10.LineNumber = 5;
-        temp10.FileName = "Pages/heightControlPage.ux";
-        temp11.Children.Add(temp12);
-        temp12.Alignment = Fuse.Elements.Alignment.VerticalCenter;
-        temp12.Children.Add(temp);
-        temp12.Children.Add(temp14);
-        temp12.Children.Add(temp1);
-        temp.Aspect = 2f;
-        temp.Width = new Uno.UX.Size(100f, Uno.UX.Unit.Percent);
-        temp.BoxSizing = Fuse.Elements.Element.BoxSizingMode.FillAspect;
-        temp.Text = "Opp";
-        temp.FontSize = 72;
-        temp.Bindings.Add(temp13);
+        temp1_TextColor_inst = new TG18_tgButton_TextColor_Property(temp1, __selector1);
+        var temp6 = new global::Fuse.Reactive.Member(temp5, "code");
+        var temp7 = new global::Fuse.Reactive.Data("colorPalette");
+        var temp8 = new global::Fuse.Reactive.Member(temp7, "mdBlack");
+        var temp2 = new global::tg.Button();
+        temp2_TextColor_inst = new TG18_tgButton_TextColor_Property(temp2, __selector1);
+        var temp9 = new global::Fuse.Reactive.Member(temp8, "code");
+        var temp10 = new global::Fuse.Reactive.DataBinding(temp_Value_inst, temp3, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        var temp11 = new global::Fuse.Reactive.JavaScript(__g_nametable);
+        var temp12 = new global::Fuse.Controls.Panel();
+        var temp13 = new global::Fuse.Controls.StackPanel();
+        var temp14 = new global::Fuse.Reactive.DataBinding(temp1_TextColor_inst, temp6, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        var temp15 = new global::tg.Separator();
+        var temp16 = new global::Fuse.Reactive.DataBinding(temp2_TextColor_inst, temp9, __g_nametable, Fuse.Reactive.BindingMode.Default);
+        this.Name = __selector2;
+        temp.Key = "TabColor";
+        temp.Bindings.Add(temp10);
+        temp11.LineNumber = 3;
+        temp11.FileName = "Pages/heightControlPage.ux";
+        temp11.File = new global::Uno.UX.BundleFileSource(import global::Uno.IO.BundleFile("../../../Pages/heightControlPage.js"));
+        temp12.Children.Add(temp13);
+        temp13.Alignment = Fuse.Elements.Alignment.VerticalCenter;
+        temp13.Children.Add(temp1);
+        temp13.Children.Add(temp15);
+        temp13.Children.Add(temp2);
         temp1.Aspect = 2f;
         temp1.Width = new Uno.UX.Size(100f, Uno.UX.Unit.Percent);
         temp1.BoxSizing = Fuse.Elements.Element.BoxSizingMode.FillAspect;
-        temp1.Text = "Ned";
-        temp1.FontSize = 72;
-        temp1.Bindings.Add(temp15);
+        temp1.Text = "\uF106";
+        temp1.FontSize = 150;
+        temp1.Font = global::MainView.fa;
+        temp1.Bindings.Add(temp14);
+        temp2.Aspect = 2f;
+        temp2.Width = new Uno.UX.Size(100f, Uno.UX.Unit.Percent);
+        temp2.BoxSizing = Fuse.Elements.Element.BoxSizingMode.FillAspect;
+        temp2.Text = "\uF107";
+        temp2.FontSize = 150;
+        temp2.Font = global::MainView.fa;
+        temp2.Bindings.Add(temp16);
         __g_nametable.This = this;
-        this.Children.Add(temp8);
-        this.Children.Add(temp9);
+        this.Children.Add(temp);
         this.Children.Add(temp11);
->>>>>>> 10b490d17f581411dec90f73b2587559addec886
+        this.Children.Add(temp12);
     }
-    static global::Uno.UX.Selector __selector0 = "TextColor";
-    static global::Uno.UX.Selector __selector1 = "heightControlPage";
+    static global::Uno.UX.Selector __selector0 = "Value";
+    static global::Uno.UX.Selector __selector1 = "TextColor";
+    static global::Uno.UX.Selector __selector2 = "heightControlPage";
 }

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <App Background="#000">
 	<iOS.StatusBarConfig Style="Light" />
 	<Android.StatusBarConfig Color="{colorPalette.mdRed.code}" />
@@ -42,7 +41,7 @@
 	                <NavigateTo Target="{Page Visual}"/>
 	            </Clicked>
 	            <Panel ux:Name="icon" Padding="10">
-	                <Image Source="{Page Icon}" />
+	                <Text TextAlignment="Center" TextColor="{colorPalette.mdBlack.code}" Width="100%" Font="fa" FontSize="25" Value="{Page Icon}" />
 	            </Panel>
 	            <Rectangle Color="{Page TabColor}" Opacity=".75" />
 	        </Panel>

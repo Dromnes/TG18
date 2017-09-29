@@ -1,5 +1,6 @@
 <Page ux:Class="heightControlPage" ux:Name="heightControlPage">
 	<ResourceFloat4 Key="TabColor" Value="{tabColor}" />
+	<ResourceString Key="Icon" Value="&#xf0dc;" />
 	<JavaScript File="heightControlPage.js" />
 
 	<Panel>

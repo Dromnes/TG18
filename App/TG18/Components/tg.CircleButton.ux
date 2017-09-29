@@ -4,7 +4,7 @@
 	<Font ux:Property="Font" />
 	<int ux:Property="FontSize" />
 
-	<Text Value="{ReadProperty customButtonCircle.Text}" Alignment="Center" Font="{ReadProperty customButtonCircle.Font}" FontSize="{ReadProperty customButtonCircle.FontSize}" Color="{ReadProperty customButtonCircle.TextColor}" />
+	<Text Value="{ReadProperty circleButton.Text}" Alignment="Center" Font="{ReadProperty circleButton.Font}" FontSize="{ReadProperty circleButton.FontSize}" Color="{ReadProperty circleButton.TextColor}" />
 
 	<Shadow Size="5" Angle="70" />
 
